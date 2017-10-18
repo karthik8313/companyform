@@ -1,0 +1,46 @@
+body{
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -webkit-background-size: cover;
+
+}
+.navbar-default {
+  background-color: black;
+  border-color: white;
+  z-index: 110;
+  transition: all 1s;
+  -moz-transition: all 1s;
+  -o-transition: all 1s;
+  -webkit-transition: all 1s;
+
+}
+.navbar-default .navbar-nav > li > a {
+    color: white;
+    font-family: "Raleway", sans-serif;
+    transition: all 1s;
+    -moz-transition: all 1s;
+    -o-transition: all 1s;
+    -webkit-transition: all 1s;
+    
+}
+.navbar-default .navbar-nav > li > a:hover {
+    color: #f44336;
+}
+.navbar-default .navbar-nav > li > a:focus {
+    color: #f44336;
+}
+.navbar-brand {
+    padding: 9px 15px;
+}
+.navbar-brand img  {
+    width: 75%;
+    height: 100%;
+     transition: all 1s;
+    -moz-transition: all 1s;
+    -o-transition: all 1s;
+    -webkit-transition: all 1s;
+}

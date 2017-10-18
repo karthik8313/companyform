@@ -1,0 +1,263 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<link rel="apple-touch-icon" sizes="76x76" href="{% static 'img/favicon.ico' %}">
+
+	<title>DevU Jobs</title>
+
+	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <meta name="viewport" content="width=device-width" />
+
+	<link rel="apple-touch-icon" sizes="76x76" href="static/img/apple-icon.png" />
+	<link rel="icon" type="image/png" href="static/img/favicon.png" />
+
+	<!--     Fonts and icons     -->
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
+
+	<!-- CSS Files -->
+	<link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet" />
+	<link href="{% static 'css/material-bootstrap-wizard.css' %}" rel="stylesheet" />
+
+	<!-- CSS Just for demo purpose, don't include it in your project -->
+	<link href="{% static 'css/demo.css' %}" rel="stylesheet" />
+	<!--Nav Bar-->
+
+
+
+<nav class="navbar navbar-default navbar-fixed-top">
+                <div class="container">                  
+                    <div class="navbar-header">
+                      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#my-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                      </button>
+                      <a class="navbar-brand" href="#">
+                          <img src="{% static 'img/logo.PNG' %}" alt="logo">
+
+                        </a>
+                    </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="my-navbar-collapse-1">
+                  <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#HOME" class="nav-item">HOME</a></li>
+                        <li><a href="#ABOUT" class="nav-item">COURSE</a></li>
+                        <li><a href="#FEATURES" class="nav-item">CALENDAR</a></li>
+                        <li><a href="#SCREENS" class="nav-item">CONTACT</a></li>
+                  </ul>
+                 </div>
+              </div>
+        </nav>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+<body id="bg" style="background-image: url('{% static "img/back.PNG"%}')";>
+	    <div class="container">
+	        <div class="row">
+		        <div class="col-md-8 col-md-offset-2">
+		            <!--      Wizard container        -->
+		            <div class="wizard-container">
+		                <div class="card wizard-card" data-color="red" id="wizardProfile">
+		                    <form action="" method="">
+		                <!--        You can switch " data-color="purple" "  with one of the next bright colors: "green", "orange", "red", "blue"       -->
+
+		                    	<div class="wizard-header">
+		                        	<h3 class="wizard-title">
+		                        	   Create a Job
+		                        	</h3>
+									<h5>This information will let us know more about your Job oppurtunities.</h5>
+		                    	</div>
+								<div class="wizard-navigation">
+									<ul>
+			                            <li><a href="#company_details" data-toggle="tab">Company Details</a></li>
+			                            <li><a href="#job_details" data-toggle="tab">Job Details</a></li>
+			                            <li><a href="#other_details" data-toggle="tab">Other Details</a></li>
+			                        </ul>
+								</div>
+
+		                        <div class="tab-content">
+		                            <div class="tab-pane" id="company_details">
+		                              <div class="row">
+		                                	<h4 class="info-text"> Let's start with the basic info about your Company</h4>
+		                                	<div class="col-md-10 col-md-offset-1">
+												<div class="input-group">
+													<span class="input-group-addon">
+														<i class="material-icons">card_travel</i>
+													</span>
+													<div class="form-group label-floating">
+			                                          <label for="id_company_name" class="control-label">Company Name <small>(required)</small></label>
+			                                          <input name="company_name" type="text" class="form-control">
+			                                        </div>
+												</div>
+
+												<div class="input-group">
+													<span class="input-group-addon">
+														<i class="material-icons">store</i>
+													</span>
+													<div class="form-group label-floating">
+													  <label for="id_company_website" class="control-label">Company Website <small>(required)</small></label>
+													  <input name="company_website" type="url" class="form-control">
+													</div>
+												</div>
+												<div class="col-md-6">
+												<div class="input-group">
+													<span class="input-group-addon">
+														<i class="material-icons">subject</i>
+													</span>
+													<div class="form-group label-floating">
+			                                            <label for="id_recruiter_email" class="control-label">Email <small>(required)</small></label>
+			                                            <input name="recruiter_email" type="email" class="form-control">
+			                                        </div>
+												</div></div>
+												<div class="col-md-6">
+												<div class="input-group">
+													<span class="input-group-addon">
+														<i class="material-icons">pin_drop</i>
+													</span>
+													<div class="form-group label-floating">
+			                                            <label for="id_location" class="control-label">Company Location<small>(required)</small></label>
+			                                            <input name="location" type="text" class="form-control">
+			                                        </div>
+												</div></div>
+
+		                                	</div>
+		                            	</div>
+		                            </div>
+		           <!****************job details********************************>
+		                            <div class="tab-pane" id="job_details">
+		                                <h4 class="info-text"> About your Job </h4>
+		                                <div class="row">
+		                                	<div class="col-md-10">
+		                                		<div class="input-group">
+													<span class="input-group-addon">
+														<i class="material-icons">perm_device_information</i>
+													</span>
+													<div class="form-group label-floating">
+													  <label for="id_job_description" class="control-label">Job Description <small>(required)</small></label>
+													  <input name="job_description" type="text" class="form-control">
+													</div>
+												</div>
+		                                		<div class="input-group">
+													<span class="input-group-addon">
+														<i class="material-icons">note_add</i>
+													</span>
+													<div class="form-group label-floating">
+													  <label for="id_key_skills" class="control-label">Key Skills <small>(required)</small></label>
+													  <input name="key_skills" type="text" class="form-control">
+													</div>
+												</div>
+
+		                                	</div>
+		                                    
+		                                </div>
+		                                <div class="row">
+		                                	<div class="col-md-6">
+		                                		<div class="form-group label-floating is-empty">
+		                                        	<label for="id_job_type" class="control-label">Job Type</label>
+		                                        	<select class="form-control">
+		                                            	<option disabled="" selected=""></option>
+		                                            	<option>Full Time</option>
+		                                            	<option>Part Time </option>
+		                                            	<option>Internship</option>
+		                                        	</select>
+		                                    	<span class="material-input"></span></div>
+		                                	</div>
+		                                	<div class="col-md-6">
+		                                		<div class="form-group label-floating is-empty">
+		                                        	<label for="id_salary_range" class="control-label">Salary</label>
+		                                        	<select class="form-control">
+		                                            	<option disabled="" selected=""></option>
+		                                            	<option>1.5 - 3 Lpa</option>
+		                                            	<option>3 - 5 Lpa</option>
+		                                            	<option>5 - 7 Lpa</option>
+		                                            	<option>7 Lpa and above</option>
+		                                        	</select>
+		                                    	<span class="material-input"></span></div>
+		                                	</div>
+
+		                                </div>
+		                            </div>
+		                            <div class="tab-pane" id="other_details">
+		                                <div class="row">
+		                                    <div class="col-md-12">
+		                                        <h4 class="info-text"> Interview Details </h4>
+		                                    </div>
+		                                    
+		                                </div>
+		                                <div class="row">
+		                                    <div class="col-md-12">
+		                                    	<div class="input-group">
+													<span class="input-group-addon">
+														<i class="material-icons">pin_drop</i>
+													</span>
+													<div class="form-group label-floating">
+													  <label for="id_interview_location" class="control-label">Interview Location <small>(required)</small></label>
+													  <input name="interview_location" type="text" class="form-control">
+													</div>
+												</div>
+												<div class="input-group">
+													<span class="input-group-addon">
+														<i class="material-icons">event_available</i>
+													</span>
+													<div class="form-group label-floating">
+													  <label for="id_date_of_joining" class="control-label">Expected Date of Joinig <small>(required)</small></label>
+													  <input name="date_of_joining" type="date" class="form-control">
+													</div>
+												</div>
+		                                    </div>
+		                                    
+		                                </div>
+		                            </div>
+		                        </div>
+		                        <div class="wizard-footer">
+		                            <div class="pull-right">
+		                                <input type='button' class='btn btn-next btn-fill btn-success btn-wd' name='next' value='Next' />
+		                                <input type='submit' class='btn btn-finish btn-fill btn-success btn-wd' name='finish' value='Finish' formaction="/success"/>
+		                            </div>
+
+		                            <div class="pull-left">
+		                                <input type='button' class='btn btn-previous btn-fill btn-default btn-wd' name='previous' value='Previous' />
+		                            </div>
+		                            <div class="clearfix"></div>
+		                        </div>
+		                    </form>
+		                </div>
+		            </div> <!-- wizard container -->
+		        </div>
+	        </div><!-- end row -->
+	    </div> <!--  big container -->
+
+</body>
+	<!--   Core JS Files   -->
+    <script src="{% static 'js/jquery-2.2.4.min.js' %}" type="text/javascript"></script>
+	<script src="{% static 'js/bootstrap.min.js' %}" type="text/javascript"></script>
+	<script src="{% static 'js/jquery.bootstrap.js' %}" type="text/javascript"></script>
+
+	<!--  Plugin for the Wizard -->
+	<script src="{% static 'js/material-bootstrap-wizard.js' %}"></script>
+
+    <!--  More information about jquery.validate here: http://jqueryvalidation.org/	 -->
+	<script src="{% static 'js/jquery.validate.min.js' %}"></script>
+	<script src="{% static 'js/custom.js' %}"></script>
+
+</html>
